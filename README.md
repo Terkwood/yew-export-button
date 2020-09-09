@@ -1,7 +1,11 @@
 # yew-export-button
 
+🚧 _Under construction_ 🚧
+
+This will be a lib which defines the following type of function, but in a generic form. 
+
 ```rust
-se crate::model::*;
+use crate::model::*;
 use chrono::prelude::*;
 use yew::prelude::*;
 
