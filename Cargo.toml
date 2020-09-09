@@ -1,7 +1,9 @@
 [package]
 authors = ["Terkwood <38859656+Terkwood@users.noreply.github.com>"]
 edition = "2018"
+license = "MIT"
 name = "yew-export-button"
+repository = "https://github.com/Terkwood/yew-export-button"
 version = "0.1.0"
 
 [lib]
@@ -13,6 +15,4 @@ js-sys = "0.3.44"
 serde = "1.0.115"
 serde_derive = "1.0.115"
 serde_json = "1.0.57"
-wasm-bindgen = "0.2.67"
-web-sys = "0.3.44"
 yew = "0.17.3"
