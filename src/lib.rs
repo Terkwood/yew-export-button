@@ -19,11 +19,11 @@ where
 
 const FILE_TYPE: &str = "application/json";
 
-fn provide_data<T>(state: &T) -> Result<String, ProvideDataErr>
+fn provide_data<T>(data: &T) -> Result<String, ProvideDataErr>
 where
     T: Serialize,
 {
-    if let Ok(ser) = serde_json::to_string(state) {
+    if let Ok(ser) = serde_json::to_string(data) {
         let encoded: String = js_sys::encode_uri_component(&ser).into();
 
         Ok(format!("data:{};charset=utf-8,{}", FILE_TYPE, encoded))
