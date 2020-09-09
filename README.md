@@ -2,7 +2,7 @@
 
 🚧 _Under construction_ 🚧
 
-This will be a lib which defines the following type of function, but in a generic form. 
+This will be a lib which defines the following type of function, but in a generic form.
 
 ```rust
 use crate::model::*;
