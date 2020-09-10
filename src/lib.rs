@@ -4,13 +4,13 @@ use serde::Serialize;
 use yew::prelude::*;
 
 pub struct ButtonOpts<'a, 'b, 'c> {
-    utc_millis: u64,
-    file_prefix: &'a str,
-    button_id: &'b str,
-    a_class: &'c str,
+    pub utc_millis: u64,
+    pub file_prefix: &'a str,
+    pub button_id: &'b str,
+    pub a_class: &'c str,
 }
 
-pub fn button<T>(data: &T, opts: ButtonOpts) -> Html
+pub fn export_button<T>(data: &T, opts: ButtonOpts) -> Html
 where
     T: Serialize,
 {
