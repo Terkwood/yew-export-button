@@ -3,11 +3,11 @@ use chrono::prelude::*;
 use serde::Serialize;
 use yew::prelude::*;
 
-pub struct ButtonOpts<'a> {
+pub struct ButtonOpts<'a, 'b, 'c> {
     utc_millis: u64,
     file_prefix: &'a str,
-    button_id: &'a str,
-    a_class: &'a str,
+    button_id: &'b str,
+    a_class: &'c str,
 }
 
 pub fn button<T>(data: &T, opts: ButtonOpts) -> Html
