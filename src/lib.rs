@@ -3,11 +3,11 @@ use chrono::prelude::*;
 use serde::Serialize;
 use yew::prelude::*;
 
-pub struct ButtonOpts<'a, 'b, 'c> {
+pub struct ButtonOpts {
     pub utc_millis: u64,
-    pub file_prefix: &'a str,
-    pub button_id: &'b str,
-    pub a_class: &'c str,
+    pub file_prefix: String,
+    pub button_id: String,
+    pub a_class: String,
 }
 
 pub fn export_button<T>(data: &T, opts: ButtonOpts) -> Html
@@ -18,9 +18,9 @@ where
     let formatted_datetime: String = dt.format("%Y%m%d_%H%M%SZ").to_string();
     let filename: String = format!("{}_{}.json", opts.file_prefix, formatted_datetime);
     if let Ok(href) = provide_data(data) {
-        html! { <button id=opts.button_id><a href=href download=filename class=opts.a_class>{ "Export 💾" }</a></button> }
+        html! { <button id={opts.button_id}><a href={href} download={filename} class={opts.a_class}>{ "Export 💾" }</a></button> }
     } else {
-        html! { <button id=opts.button_id>{ "Unavailable ⛔" }</button>}
+        html! { <button id={opts.button_id}>{ "Unavailable ⛔" }</button>}
     }
 }
 
