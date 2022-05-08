@@ -10,7 +10,7 @@ pub struct ButtonOpts {
     pub a_class: String,
 }
 
-pub fn export_button<T>(data: &T, opts: &'static ButtonOpts) -> Html
+pub fn export_button<T>(data: &T, opts: ButtonOpts) -> Html
 where
     T: Serialize,
 {
