@@ -4,7 +4,7 @@ edition = "2018"
 license = "MIT"
 name = "yew-export-button"
 repository = "https://github.com/Terkwood/yew-export-button"
-version = "1.0.2"
+version = "1.0.3-a"
 
 [lib]
 crate-type = ["cdylib", "rlib"]
