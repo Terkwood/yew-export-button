@@ -10,7 +10,7 @@ pub struct ButtonOpts {
     pub a_class: String,
 }
 
-pub fn export_button<T>(data: &T, opts: ButtonOpts) -> Html
+pub fn export_button<T>(data: &T, opts: ButtonOpts) -> yew::virtual_dom::VNode
 where
     T: Serialize,
 {
