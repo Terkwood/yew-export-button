@@ -2,6 +2,17 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [3.0.0](https://github.com/Terkwood/yew-export-button/compare/v2.0.0...v3.0.0) (2023-11-24)
+
+
+### ⚠ BREAKING CHANGES
+
+* yew 0.21.0
+
+### Bug Fixes
+
+* upgrade yew 0.21.0 ([d5cad5c](https://github.com/Terkwood/yew-export-button/commit/d5cad5c896dd850fb5e12ed1d36e81bcec339de5))
+
 ## [2.0.0](https://github.com/Terkwood/yew-export-button/compare/v1.0.3...v2.0.0) (2023-11-24)
 
 
