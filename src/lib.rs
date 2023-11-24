@@ -14,7 +14,7 @@ pub fn export_button<T>(data: &T, opts: ButtonOpts) -> Html
 where
     T: Serialize,
 {
-    let dt = Utc.timestamp_millis(opts.utc_millis as i64);
+    let dt = Utc.timestamp_millis_opt(opts.utc_millis as i64).unwrap();
     let formatted_datetime: String = dt.format("%Y%m%d_%H%M%SZ").to_string();
     let filename: String = format!("{}_{}.json", opts.file_prefix, formatted_datetime);
     if let Ok(href) = provide_data(data) {
